@@ -8,4 +8,4 @@ pandas
 torch
 plotly
 langdetect
-
+sentencepiece
