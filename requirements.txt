@@ -7,5 +7,5 @@ numpy
 pandas
 torch
 plotly
-
+langdetect
 
