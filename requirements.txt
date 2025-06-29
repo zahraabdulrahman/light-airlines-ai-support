@@ -1,3 +1,11 @@
-altair
-pandas
 streamlit
+transformers
+sentence-transformers
+scikit-learn
+faiss-cpu
+numpy
+pandas
+torch
+plotly
+
+

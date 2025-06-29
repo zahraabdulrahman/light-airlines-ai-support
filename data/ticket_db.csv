@@ -1,0 +1,11 @@
+ticket_id,issue_summary,resolution_summary,team,tags
+R100,Couldn't access booking on app,Cleared cache and advised login again,Tech Support,"login, app"
+R101,Luggage not received,"Contacted ground ops, provided update in 48h",Baggage Team,"baggage, delay"
+R102,Duplicate baggage charge,Issued refund through payment gateway,Billing,"refund, billing"
+R103,Flight change request failed,Rebooked flight manually and confirmed to customer,Bookings,"flight_change, manual"
+R104,In-flight entertainment issue,Filed complaint and offered 500 miles credit,Cabin Services,"entertainment, compensation"
+R105,No e-ticket email,Resent e-ticket and confirmed delivery,Tech Support,"email, e-ticket"
+R106,Wrong cancellation charge,"Reviewed policy, refunded fee as goodwill",Billing,"refund, policy"
+R107,Seat selection lost,Reassigned seat and confirmed selection,Bookings,"seat, booking"
+R108,Passenger name change,Assisted with name change request and updated PNR,Bookings,"name_change, policy"
+R109,App crashing on check-in,"Bug logged, advised to use web check-in",Tech Support,"check-in, crash"
