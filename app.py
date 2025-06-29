@@ -1,26 +1,11 @@
-""" import streamlit as st
-from ticket_handler import handle_ticket
-
-st.title("Light Airlines - AI Support Assistant")
-
-
-txt = st.text_area(
-"Enter customer ticket:",
-)
-
-if st.button("Submit"):
-    result = handle_ticket(txt)
-    st.write("### Summary")
-    st.success(result["summary"])
-    st.write("### Issue Category")
-    st.info(f"{result['category']} → {result['team']} ({result['confidence']*100:.1f}%)") """
-
 import streamlit as st, pandas as pd
 from chatbot import chatbot_reply
 from ticket_handler import handle_ticket
 from models.cluster_cus import generate_cluster_message, get_customer_cluster, preprocess_customer_row
 from sklearn.decomposition import PCA
 import plotly.express as px
+
+st.set_page_config(page_title="Airlines Assistant ✈️", layout="wide")
 
 @st.cache_data
 def load_customers():
@@ -55,9 +40,6 @@ selected_id = st.sidebar.selectbox(
 )
 
 customer = customers.set_index("customer_id").loc[selected_id]
-
-
-st.set_page_config(page_title="Airlines Assistant", layout="wide")
 
 tabs = st.tabs(["Chatbot", "Ticket Triage", "Alerts", "Segments"])
 
@@ -121,12 +103,12 @@ with tabs[3]:
 
     df['cluster'] = clusters
 
-    # Apply PCA for visualization (on features)
+    # apply PCA for visualization 
     pca = PCA(n_components=2)
     reduced = pca.fit_transform(features)
     df['pca_x'], df['pca_y'] = reduced[:, 0], reduced[:, 1]
 
-    # Plot the clusters with hover info
+    # plot the clusters with hover info
     fig = px.scatter(
         df, x="pca_x", y="pca_y", color=df["cluster"].astype(str),
         hover_data=["name", "tier", "preferences"]
