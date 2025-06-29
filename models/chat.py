@@ -10,7 +10,7 @@ def load_resources():
         "chatbot_index.faiss",
         ["question", "answer"]
     )
-    qa_pipeline = pipeline("text2text-generation", model="google/flan-t5-large")
+    qa_pipeline = pipeline("text2text-generation", model="google/flan-t5-base")
     return chatbot_index, chatbot_df, chatbot_embed_model, qa_pipeline
 
 chatbot_index, chatbot_df, chatbot_embed_model, qa_pipeline = load_resources()
@@ -49,5 +49,5 @@ def chatbot_respond(user_input):
 
     Answer:
     """
-    response = qa_pipeline(prompt.strip(), max_new_tokens=256, num_beams=4)[0]["generated_text"]
+    response = qa_pipeline(prompt.strip(), max_new_tokens=256, num_beams=1)[0]["generated_text"]
     return response.strip()
