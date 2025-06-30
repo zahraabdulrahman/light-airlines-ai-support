@@ -108,6 +108,8 @@ with tabs[3]:
     reduced = pca.fit_transform(features)
     df['pca_x'], df['pca_y'] = reduced[:, 0], reduced[:, 1]
 
+    st.write("➤ df ready for plotting (head):", df[['pca_x','pca_y','cluster']].head())
+    
     # plot clusters with interactive hover info
     fig = px.scatter(
         df,
