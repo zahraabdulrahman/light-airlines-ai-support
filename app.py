@@ -108,11 +108,15 @@ with tabs[3]:
     reduced = pca.fit_transform(features)
     df['pca_x'], df['pca_y'] = reduced[:, 0], reduced[:, 1]
 
-    st.write("➤ df ready for plotting (head):", df[['pca_x','pca_y','cluster']].head())
+    st.write("NaNs in pca_x?", df['pca_x'].isna().sum())
+    st.write("NaNs in pca_y?", df['pca_y'].isna().sum())
+    st.write("Unique clusters:", df['cluster'].unique())
+    st.write("df shape:", df.shape)
+    st.write(df[['pca_x', 'pca_y', 'cluster']].head())
     
     # plot clusters with interactive hover info
     fig = px.scatter(
-        df,
+        df.dropna(subset=["pca_x", "pca_y"]),  # removes bad rows
         x="pca_x",
         y="pca_y",
         color=df["cluster"].astype(str),
