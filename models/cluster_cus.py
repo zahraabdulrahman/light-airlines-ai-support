@@ -1,14 +1,14 @@
-#import joblib
+import joblib
 import pandas as pd
 import streamlit as st 
 
-#@st.cache_resource
-#def load_models():
-#    scaler = joblib.load("artifacts/scaler.joblib")
+@st.cache_resource
+def load_models():
+    scaler = joblib.load("artifacts/scaler.joblib")
 #    kmeans = joblib.load("artifacts/kmeans.joblib")
-#    return scaler, kmeans
+    return scaler
 
-#scaler, kmeans = load_models()
+scaler = load_models()
 
 EXPECTED_FEATURES = [
     'tier_Gold', 'tier_Platinum', 'tier_Silver',
