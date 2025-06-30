@@ -9,7 +9,7 @@ st.set_page_config(page_title="Airlines Assistant ✈️", layout="wide")
 
 @st.cache_data
 def load_customers():
-    return pd.read_csv("data/expanded_customers.csv")
+    return pd.read_csv("data/expanded_customers_with_clusters.csv")
 
 @st.cache_data
 def load_flights():
@@ -98,25 +98,27 @@ with tabs[3]:
 
     df = customers.copy()
 
+    if 'cluster_label' in df.columns and 'cluster' not in df.columns:
+        df['cluster'] = df['cluster_label']
+
     features = preprocess_all_customers(df)
-    clusters = predict_clusters(df)
 
-    df['cluster'] = clusters
-
-    # apply PCA for visualization 
+    # Apply PCA for 2D visualization
     pca = PCA(n_components=2)
     reduced = pca.fit_transform(features)
     df['pca_x'], df['pca_y'] = reduced[:, 0], reduced[:, 1]
 
-    # plot the clusters with hover info
+    # plot clusters with interactive hover info
     fig = px.scatter(
-        df, x="pca_x", y="pca_y", color=df["cluster"].astype(str),
+        df,
+        x="pca_x",
+        y="pca_y",
+        color=df["cluster"].astype(str),
         hover_data=["name", "tier", "preferences"]
     )
 
-    
     st.plotly_chart(fig, use_container_width=True)
-    st.markdown("Hover over points to view customer details.")
+    st.markdown("Hover over points to view passenger details.")
 
     cluster_descriptions = {
         0: """
