@@ -1,14 +1,14 @@
-import joblib
+#import joblib
 import pandas as pd
 import streamlit as st 
 
-@st.cache_resource
-def load_models():
-    scaler = joblib.load("artifacts/scaler.joblib")
-    kmeans = joblib.load("artifacts/kmeans.joblib")
-    return scaler, kmeans
+#@st.cache_resource
+#def load_models():
+#    scaler = joblib.load("artifacts/scaler.joblib")
+#    kmeans = joblib.load("artifacts/kmeans.joblib")
+#    return scaler, kmeans
 
-scaler, kmeans = load_models()
+#scaler, kmeans = load_models()
 
 EXPECTED_FEATURES = [
     'tier_Gold', 'tier_Platinum', 'tier_Silver',
@@ -21,10 +21,12 @@ EXPECTED_FEATURES = [
 
 
 def preprocess_customer_row(row):
-    # One-hot encode tier, contact_method, preferences
+    #One-hot encode tier, contact_method, preferences
     tier_df = pd.get_dummies(pd.Series([row["tier"]]), prefix="tier")
     contact_df = pd.get_dummies(pd.Series([row["contact_method"]]), prefix="contact")
-    pref_df = pd.Series([row["preferences"]]).str.get_dummies(sep=";")
+    
+    prefs = ";".join([p.strip() for p in str(row["preferences"]).split(";") if p.strip()])
+    pref_df = pd.Series([prefs]).str.get_dummies(sep=";")
     
     # Scale numerical features
     num = scaler.transform([[row["avg_booking_frequency"],
@@ -45,7 +47,7 @@ def preprocess_customer_row(row):
         if col not in feats.columns:
             feats[col] = 0
     
-    # Ensure correct column order
+    #Ensure correct column order
     feats = feats[EXPECTED_FEATURES]
     
     # IMPORTANT: Reset index and ensure numeric dtype
@@ -55,10 +57,7 @@ def preprocess_customer_row(row):
     return feats
 
 def get_customer_cluster(customer_row):
-    feats = preprocess_customer_row(customer_row)
-    # kmeans.predict expects 2D array, feats is a DataFrame with one row now — perfect
-    cluster_label = kmeans.predict(feats)[0]
-    return cluster_label
+    return customer_row.get("cluster_label", None)
 
 def generate_cluster_message(customer, flight):
 
