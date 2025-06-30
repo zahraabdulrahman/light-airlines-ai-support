@@ -1,0 +1,101 @@
+customer_id,name,tier,preferences,contact_method,flight_no,avg_booking_frequency,avg_flight_delay,last_ticket_resolution_time,marketing_email_response,satisfaction_score,cluster_label
+CUST001,Mohammed,Gold,Priority boarding,Email,LA044,5,35.79,31,1,8.5,2
+CUST002,Hanna,Silver,Aisle seat;Non-veg,Email,LA013,3,20.22,51,0,6.1,1
+CUST003,Anna,Gold,Window seat,Email,LA026,2,22.22,53,1,5.5,1
+CUST004,Ibrahim,Silver,Window seat,Email,LA047,2,8.49,48,1,7.8,0
+CUST005,Anna,Gold,Window seat,SMS,LA014,0,20.95,18,0,8.3,2
+CUST006,Abdulrahman,Platinum,Aisle seat;Non-veg,SMS,LA027,0,12.51,16,1,5.4,2
+CUST007,Anna,Gold,Aisle seat;Non-veg,SMS,LA005,4,15.53,51,0,10.0,0
+CUST008,Ahmed,Gold,Non-veg,SMS,LA003,1,18.24,19,0,9.4,2
+CUST009,Ibrahim,Platinum,Lounge access,Email,LA010,4,18.84,25,1,6.4,2
+CUST010,Lamia,Silver,Extra baggage,Email,LA005,6,1.24,17,0,4.3,0
+CUST011,Sarah,Silver,Window seat;Vegetarian meal,Email,LA039,0,25.82,44,0,8.8,2
+CUST012,Hanna,Gold,Aisle seat,Email,LA015,7,34.69,46,1,4.8,1
+CUST013,Sarah,Gold,Vegetarian meal,Email,LA028,5,23.61,23,0,10.0,2
+CUST014,Mohammed,Silver,Lounge access,SMS,LA020,3,5.81,41,1,9.1,0
+CUST015,Lara,Silver,No preference,Email,LA020,4,21.36,31,1,8.2,2
+CUST016,Lara,Platinum,Priority boarding,SMS,LA013,3,5.18,29,0,6.5,0
+CUST017,Sarah,Platinum,Vegetarian meal,Email,LA007,5,16.08,22,0,4.1,1
+CUST018,Hussa,Gold,Aisle seat,Email,LA022,1,-6.55,46,1,7.7,0
+CUST019,Sarah,Silver,Aisle seat;Non-veg,Email,LA038,3,23.01,58,0,4.1,1
+CUST020,Ahmed,Silver,Window seat,Email,LA036,1,28.18,12,0,4.9,2
+CUST021,Anna,Platinum,Aisle seat,SMS,LA050,2,20.6,32,1,10.0,2
+CUST022,Hanna,Gold,Aisle seat;Non-veg,Email,LA024,3,23.4,41,0,7.0,1
+CUST023,Ahmed,Silver,No preference,Email,LA039,2,27.28,14,0,5.8,2
+CUST024,Mohammed,Silver,Aisle seat;Non-veg,Email,LA047,4,10.09,38,1,5.9,0
+CUST025,Mohammed,Silver,Aisle seat,SMS,LA016,5,24.28,49,0,2.1,1
+CUST026,Anna,Gold,Priority boarding,SMS,LA022,2,28.14,35,1,4.5,1
+CUST027,Lamia,Platinum,Priority boarding,Email,LA030,7,29.65,25,1,4.9,1
+CUST028,Anna,Silver,Aisle seat;Non-veg,SMS,LA036,5,22.26,44,0,8.7,1
+CUST029,Lamia,Silver,Lounge access,SMS,LA002,5,21.51,45,0,7.0,1
+CUST030,Hussa,Gold,Non-veg,SMS,LA036,6,11.32,31,0,7.3,0
+CUST031,Mohammed,Silver,Lounge access,Email,LA041,5,20.13,37,1,9.9,2
+CUST032,Sarah,Silver,Window seat;Vegetarian meal,SMS,LA035,6,19.88,55,0,7.4,1
+CUST033,Abdulrahman,Silver,Window seat,SMS,LA041,2,18.76,40,1,8.5,0
+CUST034,Lara,Silver,Aisle seat,Email,LA019,6,27.1,12,1,7.2,2
+CUST035,Hanna,Silver,Lounge access,Email,LA033,4,30.57,26,1,7.1,2
+CUST036,Sarah,Gold,Window seat,SMS,LA016,4,4.49,33,0,6.0,0
+CUST037,Hanna,Gold,Aisle seat;Non-veg,Email,LA001,9,21.65,31,0,5.3,1
+CUST038,Sarah,Platinum,Window seat,SMS,LA017,5,0.08,17,0,7.9,0
+CUST039,Hanna,Silver,Extra baggage,SMS,LA017,3,20.46,56,1,5.7,1
+CUST040,Ibrahim,Silver,Non-veg,SMS,LA011,2,18.93,28,1,6.0,2
+CUST041,Mohammed,Silver,Vegetarian meal,SMS,LA039,2,12.28,10,0,10.0,2
+CUST042,Hussa,Gold,Aisle seat;Non-veg,SMS,LA038,2,22.71,14,1,10.0,2
+CUST043,Lara,Silver,Window seat;Vegetarian meal,Email,LA014,4,24.44,21,1,8.5,2
+CUST044,Lara,Platinum,Priority boarding,Email,LA012,0,26.99,45,1,8.2,2
+CUST045,Abdulrahman,Gold,Aisle seat;Non-veg,Email,LA028,4,18.72,28,1,6.1,1
+CUST046,Sarah,Platinum,Aisle seat,SMS,LA043,4,17.98,41,1,7.1,1
+CUST047,Abdulrahman,Silver,Window seat;Vegetarian meal,Email,LA003,7,22.81,26,0,5.8,1
+CUST048,Lara,Platinum,Lounge access,Email,LA014,4,39.51,59,0,6.9,1
+CUST049,Lara,Silver,Lounge access,Email,LA012,5,27.47,58,0,8.2,1
+CUST050,Sarah,Gold,Priority boarding,Email,LA010,3,21.8,21,0,9.1,2
+CUST051,Hussa,Gold,Priority boarding,SMS,LA024,5,14.77,28,0,8.9,0
+CUST052,Ahmed,Platinum,No preference,Email,LA047,1,23.24,28,0,6.7,2
+CUST053,Hanna,Silver,No preference,SMS,LA018,2,31.24,30,1,10.0,2
+CUST054,Hussa,Platinum,No preference,Email,LA010,5,-0.9,32,0,10.0,0
+CUST055,Sarah,Gold,Window seat,SMS,LA049,8,28.86,11,1,6.5,2
+CUST056,Lamia,Silver,Non-veg,Email,LA035,1,31.54,16,0,6.0,2
+CUST057,Hanna,Silver,Priority boarding,SMS,LA026,4,-0.37,35,0,10.0,0
+CUST058,Abdulrahman,Gold,Window seat;Vegetarian meal,Email,LA033,3,35.9,17,1,7.9,2
+CUST059,Hanna,Platinum,Aisle seat,Email,LA002,5,26.9,47,0,6.2,1
+CUST060,Hanna,Silver,Lounge access,SMS,LA005,5,28.44,27,1,4.9,1
+CUST061,Ibrahim,Gold,Lounge access,Email,LA048,2,34.37,20,0,5.6,2
+CUST062,Hanna,Platinum,Window seat,SMS,LA039,6,-1.24,59,1,5.9,0
+CUST063,Mohammed,Silver,Window seat,Email,LA023,3,37.28,57,1,4.0,1
+CUST064,Ibrahim,Platinum,Extra baggage,Email,LA049,8,31.79,41,1,6.1,1
+CUST065,Sarah,Silver,No preference,SMS,LA015,6,23.42,14,0,10.0,2
+CUST066,Lamia,Gold,Lounge access,Email,LA049,7,21.2,10,0,8.0,2
+CUST067,Sarah,Gold,Aisle seat;Non-veg,SMS,LA013,3,22.42,12,0,10.0,2
+CUST068,Hanna,Gold,Window seat,Email,LA035,6,34.89,48,0,8.8,1
+CUST069,Hussa,Silver,Aisle seat,SMS,LA009,1,30.58,39,1,3.5,1
+CUST070,Lara,Silver,No preference,SMS,LA006,4,17.37,51,0,8.1,0
+CUST071,Sarah,Platinum,Vegetarian meal,SMS,LA028,5,23.84,11,0,6.9,2
+CUST072,Lara,Silver,Window seat;Vegetarian meal,SMS,LA007,3,8.99,34,0,8.0,0
+CUST073,Hussa,Gold,Aisle seat,Email,LA022,4,11.85,30,0,5.9,0
+CUST074,Ibrahim,Silver,No preference,Email,LA002,4,7.82,35,0,4.7,0
+CUST075,Anna,Silver,Extra baggage,SMS,LA015,5,28.51,58,0,5.8,1
+CUST076,Hussa,Platinum,Extra baggage,SMS,LA040,8,28.67,52,1,7.9,1
+CUST077,Hussa,Gold,Extra baggage,SMS,LA015,3,11.89,46,1,5.2,0
+CUST078,Anna,Silver,Lounge access,Email,LA005,3,4.39,22,1,7.4,0
+CUST079,Lara,Gold,Window seat,SMS,LA002,4,43.74,17,0,9.0,2
+CUST080,Ibrahim,Silver,Lounge access,Email,LA023,6,-0.79,42,0,7.0,0
+CUST081,Mohammed,Platinum,Aisle seat;Non-veg,Email,LA028,0,13.83,57,1,4.5,1
+CUST082,Ibrahim,Platinum,Non-veg,Email,LA021,2,20.49,49,0,5.3,1
+CUST083,Anna,Silver,Non-veg,SMS,LA039,5,19.91,47,1,7.9,1
+CUST084,Sarah,Gold,Extra baggage,Email,LA047,6,12.37,42,1,3.4,1
+CUST085,Anna,Gold,Lounge access,SMS,LA044,5,18.02,12,0,8.0,2
+CUST086,Abdulrahman,Silver,Aisle seat,Email,LA024,1,13.98,46,0,8.5,0
+CUST087,Hanna,Gold,Extra baggage,Email,LA042,0,19.28,47,0,5.0,1
+CUST088,Ibrahim,Gold,Non-veg,SMS,LA016,5,21.7,21,0,7.2,2
+CUST089,Abdulrahman,Gold,Extra baggage,SMS,LA032,3,25.79,46,0,8.0,1
+CUST090,Lamia,Silver,Extra baggage,Email,LA044,2,25.43,35,1,9.1,2
+CUST091,Hanna,Silver,Window seat;Vegetarian meal,SMS,LA011,8,39.98,26,0,3.8,1
+CUST092,Lara,Platinum,Vegetarian meal,SMS,LA011,5,21.65,17,1,8.1,2
+CUST093,Hussa,Gold,Aisle seat;Non-veg,Email,LA046,7,29.7,42,0,8.4,1
+CUST094,Hanna,Silver,Priority boarding,SMS,LA008,2,16.52,47,0,8.7,0
+CUST095,Lara,Gold,Vegetarian meal,Email,LA021,5,-5.73,54,1,6.2,0
+CUST096,Hanna,Gold,Window seat,SMS,LA015,5,2.21,56,0,10.0,0
+CUST097,Mohammed,Gold,Non-veg,SMS,LA008,4,28.68,52,1,5.1,1
+CUST098,Lara,Platinum,Non-veg,Email,LA034,7,35.93,49,1,6.0,1
+CUST099,Lara,Silver,No preference,Email,LA001,4,24.19,10,0,6.2,2
+CUST100,Mohammed,Silver,Non-veg,Email,LA005,4,30.71,35,0,5.8,1
