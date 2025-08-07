@@ -1,21 +1,29 @@
----
-title: Light Airlines AI Support Assistant
-emoji: ✈️
-colorFrom: blue
-colorTo: green
-sdk: streamlit
-sdk_version: "1.24.1"
-app_file: app.py
-pinned: false
----
+# ✈️ Light Airlines AI Support Assistant
 
-# Light Airlines AI Support Assistant
+An AI-powered customer support platform designed for airline operations, hosted on [Hugging Face Spaces](https://huggingface.co/spaces/melopixe/light-airlines-ai-support) and built with Streamlit.
 
-This Space hosts the AI-powered customer support platform for Light Airlines, featuring:
+## 🌐 Live Demo
 
-- **Intelligent Chatbot:** RAG-powered chatbot for instant, context-aware passenger inquiries.
-- **Automated Ticket Triage:** Summarizes, classifies, and routes tickets to the right support teams.
-- **Passenger Segmentation:** Visual clustering of customer profiles for targeted engagement.
-- **Personalized Delay Alerts:** Customized flight disruption notifications based on passenger tier and preferences.
+👉 [Launch the App](https://huggingface.co/spaces/melopixe/light-airlines-ai-support)
 
-Together, these AI-driven services aim to improve customer satisfaction, reduce response times, and enable personalized experiences.
+## 🎯 Features
+
+- **🧠 Intelligent Chatbot**: RAG-powered assistant for real-time, context-aware support.
+- **📨 Automated Ticket Triage**: Summarizes and routes support tickets to the right teams.
+- **👥 Passenger Segmentation**: Visual clustering of customer profiles for targeted marketing or support.
+- **📢 Personalized Delay Alerts**: Flight disruption notifications tailored to passenger tier and preferences.
+
+## ⚙️ Tech Stack
+
+- Python
+- Streamlit
+- Hugging Face Spaces
+- RAG (Retrieval-Augmented Generation)
+
+## 🚀 Getting Started (Run Locally)
+
+```bash
+git clone https://github.com/YOUR_USERNAME/light-airlines-ai-support.git
+cd light-airlines-ai-support
+pip install -r requirements.txt
+streamlit run app.py
